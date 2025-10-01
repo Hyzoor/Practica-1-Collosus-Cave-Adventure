@@ -33,8 +33,8 @@ const lugares: Lugar[] = [
 ];
  
 const personajes: Personaje[] = [
-  { id: 1, nombre: "Sabio sabiondo", fuerza: 8, aliado: false },
-  { id: 2, nombre: "Sabio nosabiondo", fuerza: 2, aliado: true },
+  { id: 1, nombre: "Sabio 23", fuerza: 8, aliado: false },
+  { id: 2, nombre: "Sabio 24", fuerza: 2, aliado: true },
   { id: 3, nombre: "Bandido", fuerza: 6, aliado: false }
 ];
  
@@ -53,7 +53,7 @@ const listarLugares = (): void => {
 
 const buscarPersonaje = (nombre: string): void => {
     const personajesFiltrados = personajes.filter((personaje) => {
-        return personaje.nombre.includes(nombre);
+        return personaje.nombre.toLowerCase().includes(nombre.toLowerCase());
     })
 
     personajesFiltrados.forEach((personaje) => {
@@ -102,14 +102,14 @@ const poderTotalInventario = (): number => {
 
 
 const main = (): void => {
-  const opcion: number = 5; // Cambia este número para probar
+  const opcion: number = 2; // Cambia este número para probar
  
   switch (opcion) {
     case 1:
       listarLugares();
       break;
     case 2:
-      const nombreBuscado = "Sabio"; // Cambia el nombre para probar
+      const nombreBuscado = "sabio"; // Cambia el nombre para probar
       buscarPersonaje(nombreBuscado);
       break;
     case 3:
