@@ -16,7 +16,8 @@ Toda la aventura estará representada con **arrays locales**. No habrá entradas
 ## Paso 1: Datos iniciales
 
 Declara los siguientes arrays y típalos:
-```
+
+```ts
 const lugares: Lugar[] = [
   { id: 1, nombre: "Bosque Misterioso", tipo: "bosque", peligro: 2 },
   { id: 2, nombre: "Cueva Oscura", tipo: "cueva", peligro: 5 },
@@ -67,7 +68,7 @@ En tu función main (también flecha) crea una variable opción: number para sim
 
 Ejemplo:
 
- ```
+ ```ts
 const main = (): void => {
   const opcion: number = 3; // Cambia este número para probar
  
@@ -98,7 +99,7 @@ const main = (): void => {
 
 Si opción = 3:
 
- ```
+ ```ts
 [
   'Espada (+5 poder, categoría: arma)',
   'Antorcha (+1 poder, categoría: herramienta)',
@@ -108,12 +109,12 @@ Si opción = 3:
 ```
 Si opción = 4:
 
- ```
+ ```ts
 { arma: 9, herramienta: 1, mágico: 3 }
 ```
 Si opción = 5:
 
- ```
+ ```ts
 Poder total: 13
  ```
 
